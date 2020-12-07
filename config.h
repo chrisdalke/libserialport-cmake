@@ -1,18 +1,31 @@
 /* config.h.  Generated from config.h.in by configure.  */
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+/* clock_gettime is available. */
+// === MANUALLY DISABLED FOR CMAKE BUILD ===
+// #define HAVE_CLOCK_GETTIME 1
+
 /* Define to 1 if you have the declaration of `BOTHER', and to 0 if you don't.
    */
 #define HAVE_DECL_BOTHER 0
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-/* #undef HAVE_DLFCN_H */
+// === MANUALLY DISABLED FOR CMAKE BUILD ===
+// #define HAVE_DLFCN_H 1
+
+// === MANUALLY DISABLED FOR CMAKE BUILD ===
+/* flock is available. */
+// #define HAVE_FLOCK 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
 
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
+
+/* realpath is available. */
+// === MANUALLY DISABLED FOR CMAKE BUILD ===
+// #define HAVE_REALPATH 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -47,6 +60,10 @@
 /* Define to 1 if the system has the type `struct termiox'. */
 /* #undef HAVE_STRUCT_TERMIOX */
 
+/* sys/file.h is available. */
+// === MANUALLY DISABLED FOR CMAKE BUILD ===
+// #define HAVE_SYS_FILE_H 1
+
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define HAVE_SYS_STAT_H 1
 
@@ -56,8 +73,7 @@
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries.
-   */
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
 #define LT_OBJDIR ".libs/"
 
 /* Enumeration is unsupported. */
@@ -112,6 +128,7 @@
 #define SP_PACKAGE_VERSION_STRING "0.1.1"
 
 /* Macro preceding private functions */
+// === MANUALLY DISABLED FOR CMAKE BUILD ===
 #define SP_PRIV 
 
 /* Define to 1 if you have the ANSI C header files. */
@@ -123,7 +140,8 @@
 #endif
 
 /* Number of bits in a file offset, on hosts where this is settable. */
-#define _FILE_OFFSET_BITS 64
+// === MANUALLY DISABLED FOR CMAKE BUILD ===
+// #define _FILE_OFFSET_BITS 64
 
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
